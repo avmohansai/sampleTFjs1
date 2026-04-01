@@ -8,7 +8,7 @@
 
 module.exports = async ({ github, context }) => {
   let issueNumber;
-  let assigneesList;
+  let assigneesList=[];
   // Is this an issue? If so, assign the issue number. Otherwise, assign the PR number.
   if (context.payload.issue) {
     //assignee List for issues. 
