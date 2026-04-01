@@ -5,10 +5,10 @@
     GitHub objects can call GitHub APIs using their built-in library functions.
     The context object contains issue and PR details.
 */
-
+let issueNumber;
+let assigneesList;
 module.exports = async ({ github, context }) => {
-  let issueNumber;
-  let assigneesList;
+ 
 
   assigneesList = ["avmohansai", "shashank-gtech"];
   issueNumber = context.payload.number;
